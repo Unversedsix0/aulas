@@ -1,10 +1,14 @@
 import { createBrowserRouter, Navigate } from "react-router-dom"
-import { Dashboard } from "../pages"
+import { Dashboard, Login } from "../pages"
 
 export const Routes = createBrowserRouter([
     {
         path:'/pagina-inicial',
         element:<Dashboard/>
+    },
+    {
+        path:'/login',
+        element:<Login/>
     },
     {
         path:'*',
@@ -14,13 +18,3 @@ export const Routes = createBrowserRouter([
 
 
 
-//     return(
-//         <BrowserRouter>
-//         <Switch>
-
-//             <Routes path="/" element = {<Dashboard/>}/>
-
-//         </Switch>
-//         </BrowserRouter>
-
-//     )
